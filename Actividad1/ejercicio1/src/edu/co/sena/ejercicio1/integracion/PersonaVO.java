@@ -87,14 +87,16 @@ public class PersonaVO implements  Comparable<PersonaVO>, Cloneable{
         this.sexo = sexo;
     }
     
+    @Override
         public int compareTo(PersonaVO p) {
         int res = -1;
         if (this.numDocumento.equals(p.numDocumento)) {
             res = -2;
         }
         return res;
+        
     }
-    @Override
+   
     public PersonaVO clone(){
     PersonaVO personaVOClone= new PersonaVO();
     personaVOClone.setPrimerNombre(this.primerNombre);

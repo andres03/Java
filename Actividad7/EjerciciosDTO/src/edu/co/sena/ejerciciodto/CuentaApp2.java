@@ -26,25 +26,25 @@ public class CuentaApp2 {
 
     public static void main(String[] args) throws SQLException {
 
-        CuentaTO cuenta1 = new CuentaTO();
-        cuenta1.setTipoDocumento("C.C");
-        cuenta1.setNumeroDocumento("10230064587");
-        cuenta1.setPrimerNombre("Ana");
-        cuenta1.setSegundoNombre("Mariia");
-        cuenta1.setPrimerApellido("Hoyos");
-        cuenta1.setSegundoApellido("Rodriguez");
-        cuenta1.setContrasena("4512gjgsd");
-        cuenta1.setCorreo("anaHoy@yahoo.es");
-        cuenta1.setDireccion("calle 45 b 56-56");
-        cuenta1.setTelefono("7546824");
-        cuenta1.setRool("Cliente");
-        cuenta1.setActivo(new Short("1"));
-        cuenta1.setUsuarioIdUsuario("1");
-
-        CuentaApp2 cu = new CuentaApp2();
-        cu.insertarCuenta(cuenta1);
-        System.out.println("--------------------------------");
-        
+//        CuentaTO cuenta1 = new CuentaTO();
+//        cuenta1.setTipoDocumento("C.C");
+//        cuenta1.setNumeroDocumento("10230064587");
+//        cuenta1.setPrimerNombre("Ana");
+//        cuenta1.setSegundoNombre("Mariia");
+//        cuenta1.setPrimerApellido("Hoyos");
+//        cuenta1.setSegundoApellido("Rodriguez");
+//        cuenta1.setContrasena("4512gjgsd");
+//        cuenta1.setCorreo("anaHoy@yahoo.es");
+//        cuenta1.setDireccion("calle 45 b 56-56");
+//        cuenta1.setTelefono("7546824");
+//        cuenta1.setRool("Cliente");
+//        cuenta1.setActivo(new Short("1"));
+//        cuenta1.setUsuarioIdUsuario("1");
+//
+//        CuentaApp2 cu = new CuentaApp2();
+//        cu.insertarCuenta(cuenta1);
+//        System.out.println("--------------------------------");
+//        
         CuentaTO cuenta2 = new CuentaTO();
         
         cuenta2.setDireccion("calle las lajas");
@@ -55,6 +55,7 @@ public class CuentaApp2 {
         CuentaApp2 cu2 = new CuentaApp2();
         cu2.actualizarCuenta(cuenta2);
         System.out.println("-------------------");
+        
         CuentaTO cuenta3 = new CuentaTO();
         cuenta3.setTipoDocumento("C.C");
         cuenta3.setNumeroDocumento("10230064587");
