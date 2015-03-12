@@ -1,7 +1,9 @@
 package edu.co.sena.akuavida.integracion.jdbc;
 
+import edu.co.sena.akuavida.integracion.logging.Log4JConfiguracion;
 import java.io.*;
 import java.sql.*;
+import org.apache.log4j.PropertyConfigurator;
 
 /**
  * Generic Base class for DAO classes.
@@ -10,6 +12,13 @@ import java.sql.*;
  */
 public class AbstractDAO
 {
+
+    public AbstractDAO() {
+        
+        PropertyConfigurator.configure(Log4JConfiguracion.PROPERTIES);
+    }
+    
+    
 
     public byte[] getBlobColumn(ResultSet rs, int columnIndex)
             throws SQLException
